@@ -7,7 +7,7 @@ import { PortService } from '../services/port.service';
   imports: [ NgIf],
   template: `
     <div class="w-72 mx-auto mt-24 text-center font-bold text-white bg-red-600 p-10 space-y-6">
-    <h1 class="text-5xl">2</h1>
+    <h1 class="text-5xl">PERSO</h1>
     <!-- <p *ngIf="isProduction" class="text-xl">{{'Production'}}</p>
       <p *ngIf="!isProduction" class="text-xl">{{'Development'}}</p>      
       <p class="text-3xl">{{ currentHost }}</p> -->
@@ -15,7 +15,7 @@ import { PortService } from '../services/port.service';
     <div>
   `,
 })
-export class Landing2Component {
+export class LandPersoComponent {
   // currentHost: string;
   currentPort: string; 
   // isProduction: boolean;

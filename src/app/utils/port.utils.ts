@@ -5,14 +5,14 @@ export const resolveComponentByPort = (port: string) => {
   console.log('Resolving component for port:', port);
   switch (port) {
     case '4210':
-      return import('../pages/landing1.component').then(m => m.Landing1Component);
+      return import('../pages/land-perso.component').then(m => m.LandPersoComponent);
     case '4220':
-      return import('../pages/landing2.component').then(m => m.Landing2Component);
+      return import('../pages/land-advert.component').then(m => m.LandAdvertComponent);
     case '4240':
-      return import('../pages/landing4.component').then(m => m.Landing4Component);
+      return import('../pages/land-acad.component').then(m => m.LandAcadComponent);
     case '4200':
     default:
-      return import('../pages/landing3.component').then(m => m.Landing3Component);
+      return import('../pages/land-synd.component').then(m => m.LandSyndComponent);
   }
 };
 

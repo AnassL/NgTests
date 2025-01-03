@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { PortService } from './port.service';
-import { Landing1Component } from '../pages/landing1.component';
-import { Landing2Component } from '../pages/landing2.component';
-import { Landing3Component } from '../pages/landing3.component';
-import { Landing4Component } from '../pages/landing4.component';
+import { LandSyndComponent } from '../pages/land-synd.component';
+import { LandPersoComponent } from '../pages/land-perso.component';
+import { LandAdvertComponent } from '../pages/land-advert.component';
+import { LandAcadComponent } from '../pages/land-acad.component';
 
 @Injectable({ providedIn: 'root' })
 export class ComponentResolverService {
@@ -12,19 +12,19 @@ export class ComponentResolverService {
     switch (val) {
       case '4210':
       case 'perso':
-        return Landing1Component;
+        return LandPersoComponent;
       case '4220':
       case 'advert':
-        return Landing2Component;
+        return LandAdvertComponent;
       case '4200':
       case '':
-        return Landing1Component;
+        return LandSyndComponent;
       case '4240':
       case 'academ':
-        return Landing4Component;
+        return LandAcadComponent;
       default:
         console.warn('Unknown value:', val);
-        return Landing1Component;
+        return LandSyndComponent;
     }
   }
 }

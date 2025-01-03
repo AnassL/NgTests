@@ -1,4 +1,3 @@
-import { Routes } from '@angular/router';
 import { resolveComponentByPort } from '../utils/port.utils';
 
 
@@ -24,18 +23,18 @@ export const adminRoutes = {
 export const landingRoutes = {
   landing1: {
     path: 'land1',
-    loadComponent: () => import('../pages/landing1.component').then(m => m.Landing1Component)
+    loadComponent: () => import('../pages/land-synd.component').then(m => m.LandSyndComponent)
   },
   landing2: {
     path: 'land2',
-    loadComponent: () => import('../pages/landing2.component').then(m => m.Landing2Component)
+    loadComponent: () => import('../pages/land-perso.component').then(m => m.LandPersoComponent)
   },
   landing3: {
     path: 'land3',
-    loadComponent: () => import('../pages/landing3.component').then(m => m.Landing3Component)
+    loadComponent: () => import('../pages/land-advert.component').then(m => m.LandAdvertComponent)
   },
   landing4: {
     path: 'land4',
-    loadComponent: () => import('../pages/landing4.component').then(m => m.Landing4Component)
+    loadComponent: () => import('../pages/land-acad.component').then(m => m.LandAcadComponent)
   }
 };

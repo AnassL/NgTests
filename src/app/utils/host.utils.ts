@@ -5,13 +5,13 @@ import { routesForPerso, routesForAdvert, routesForAcadem } from '../routes/host
 export const resolveComponentByHost = (host: string) => {
     switch (host) {
       case 'perso':
-        return import('../pages/landing1.component').then(m => m.Landing1Component);
+        return import('../pages/land-synd.component').then(m => m.LandSyndComponent);
       case 'advert':
-        return import('../pages/landing2.component').then(m => m.Landing2Component);
+        return import('../pages/land-perso.component').then(m => m.LandPersoComponent);
       case 'academ':
-        return import('../pages/landing4.component').then(m => m.Landing4Component);
+        return import('../pages/land-acad.component').then(m => m.LandAcadComponent);
       default:
-        return import('../pages/landing3.component').then(m => m.Landing3Component);
+        return import('../pages/land-advert.component').then(m => m.LandAdvertComponent);
     }
   };
   
